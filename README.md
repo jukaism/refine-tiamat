@@ -1,4 +1,7 @@
 # refine-tiamat
+<a href="https://yapparo.net" target="_blank" rel="noopener noreferrer">やっぱりROが好き！</a>内コンテンツ<a href="https://ragnarokonline.gungho.jp" target="_blank" rel="noopener noreferrer">jRO</a>版深淵の古城シミュレータ「<a href="https://yapparo.net/social/tiamat" target="_blank" rel="noopener noreferrer">古城の絆</a>」をリファクタリングしたいリポジトリ
+
+![main](static/help/tiamat/main.png)
 
 ## Build Setup
 
