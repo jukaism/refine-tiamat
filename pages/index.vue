@@ -727,16 +727,31 @@
         </g>
       </svg>
     </div>
+    <div style="position: fixed; bottom: 20px; left: 20px; z-index: 3; width: 300px; height: 300px;">
+      <mini-map
+        :room="currentRoom"
+        :displayGimmick="displayGimmick"
+        :clickGimmick="clickGimmick"
+        :imgOfGim="imgOfGim"
+        :colors="colors"
+        :rgbaColors="rgbaColors"
+        :gimmicks="gimmicks"
+      />
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue, Watch } from "nuxt-property-decorator"
 import { Plan, Room, Team, Move, Key, Portal, Connection, Gimmick, GimmickManager, GimmickRequire, GimmickAction } from '~/models/tiamat'
+import MiniMap from '~/components/MiniMap.vue'
 
 @Component({
   name: 'tiamat',
-  layout: 'tiamat'
+  layout: 'tiamat',
+  components: {
+    MiniMap
+  }
 })
 export default class Tiamat extends Vue {
   operator: string = 'left'
